@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhusri Cheekatla | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Georgia', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background-color: #f2f7fc;
+    }
+    nav {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+    }
+    nav a {
+      color: white !important;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+    header {
+      background-color: #eaf4ff;
+      color: #333;
+      padding: 4rem 2rem;
+      width: 100%;
+    }
+    #about, #skills, #projects, #profiles, #certifications, #contact {
+      width: 100%;
+      background: none;
+    }
+    header::after {
+      content: "";
+      position: absolute;
+      top: -50px;
+      left: -50px;
+      width: 200%;
+      height: 200%;
+      background: url('https://www.transparenttextures.com/patterns/black-linen.png');
+      opacity: 0.05;
+      z-index: 0;
+    }
+    header > * {
+      position: relative;
+      z-index: 1;
+    }
+    .profile-img {
+      width: 240px;
+      height: 240px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 6px solid white;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+      margin-bottom: 1.5rem;
+    }
+    .resume-btn {
+      margin-top: 20px;
+      font-weight: 500;
+      padding: 0.6rem 1.2rem;
+      background: white;
+      color: #0072ff;
+      border-radius: 25px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .resume-btn:hover {
+      background: #e0e0e0;
+      text-decoration: none;
+      color: #0057d9;
+    }
+    .skill-box, .project-box, .profile-box, .about-box {
+      background: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .project-container, .profile-container {
+      display: flex;
+      gap: 5px;
+      justify-content: space-between;
+      padding: 6px 0;
+      flex-wrap: wrap;
+      text-align: center;
+    }
+    .project-box, .profile-box {
+      width: 32%;
+      flex: 0 0 auto;
+      border-radius: 5px;
+      overflow: hidden;
+      text-align: center;
+    }
+    .project-box img, .profile-box img {
+      margin: 0 auto 6px;
+      max-width: 70%;
+      height: auto;
+      border-radius: 2px;
+      display: block;
+    }
+    .project-box h5, .profile-box h5 {
+      margin-top: 8px;
+      font-weight: 400;
+      text-align: center;
+    }
+    #about h2 {
+      text-align: left;
+    }
+    .skill-box img {
+      margin: 0 auto 10px;
+      display: block;
+    }
+    .container {
+      max-width: 1140px;
+      margin: auto;
+    }
+    .contact-box {
+    background: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+    }
+    .contact-item a:hover {
+    color: #0056b3;
+    text-decoration: none;
+    }
+   </style>
+</head>
+<body>
+
+<!-- ============================== -->
+<!-- Navbar Section                -->
+<!-- ============================== -->
+<!-- Navigation Bar -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background: linear-gradient(to right, #6a11cb, #2575fc);">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Madhusri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profiles">Coding Profiles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- ============================== -->
+<!-- Home Section                  -->
+<!-- ============================== -->
+<!-- Home Section -->
+<header id="home" class="text-center" style="background-color: #e6f2ff; padding: 100px 0;">
+  <div class="container">
+
+    <!-- New: Welcome Text Added -->
+    <h3 class="fw-bold mb-4">Welcome to my portfolio</h3>
+
+    <!-- Profile Image: Circular with Thin Border -->
+    <img src="Madhu.jpg" alt="Madhusri"
+         class="mx-auto d-block"
+         style="width: 180px; height: 180px; border-radius: 50%; border: 3px solid #0072ff; object-fit: cover; margin-top: 10px;">
+
+    <!-- Profile Info -->
+    <div class="mt-3">
+      <h3 style="font-size: 1.2rem; font-weight: bold;">I am Madhusri Cheekatla</h3>
+      <p style="color:#0072ff; font-weight: 700; font-size: 1rem;">
+        Tech Enthusiast <strong style="font-weight: 900; font-size: 1.1rem;">|</strong> Aspiring Software Developer
+      </p>
+      <p>Location: Hyderabad, India</p>
+      <a href="resume.pdf" download class="btn btn-outline-primary px-4 py-2 fw-semibold mt-2">Download Resume</a>
+    </div>
+
+  </div>
+</header>
+
+<!-- ============================== -->
+<!-- About Section                -->
+<!-- ============================== -->
+<section id="about" class="container py-5 d-flex justify-content-center">
+  <div class="w-100 border border-primary rounded bg-white p-4" style="max-width: 940px;">
+    <div class="row align-items-center g-4">
+      
+      <!-- Zoomed Circular Profile Image with Blue Border -->
+      <div class="col-md-4 text-center">
+        <img src="Madhusri.jpg" alt="Madhusri"
+             style="width: 220px; height: 220px; object-fit: cover; border: 5px solid #007bff; border-radius: 50%;">
+      </div>
+
+      <!-- About Me Text -->
+      <div class="col-md-8">
+        <h2 class="fw-bold mb-3">About Me</h2>
+        <p style="text-align: justify; font-size: 1rem; line-height: 1.6;">
+          <strong>I'm a passionate Computer Science student</strong> from CMR Institute of Technology, Hyderabad. I have a deep enthusiasm for <strong>problem-solving</strong> and learning new technologies.
+          <br><br>
+          With experience in <strong>Python</strong>, <strong>Java</strong>, and <strong>C Language</strong>, I enjoy turning innovative ideas into practical solutions. I actively participate in <strong>coding competitions</strong> and <strong>tech events</strong> to sharpen my skills.
+          <br><br>
+          My journey includes building <strong>real-time projects</strong>, collaborating in <strong>teams</strong>, and continuously improving through <strong>self-learning</strong>. I strive to contribute meaningfully to the tech industry and become a well-rounded software engineer.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Skills Section -->
+<!-- ============================== -->
+<!-- ============================== -->
+<!-- Skills Section -->
+<!-- ============================== -->
+<section id="skills" class="container pt-4 pb-5"><br>
+  <h2 class="text-center mb-5 fw-bold">Skills</h2>
+
+  <!-- Technical Skills -->
+  <h4 class="fw-bold mb-4">Technical Skills</h4>
+  <div class="row g-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" width="50" alt="HTML" class="mb-2">
+        <h5 class="fw-semibold">HTML</h5>
+        <p>HTML is the foundation of all web pages. It structures content for accessibility and SEO.</p>
+        <a href="https://www.google.com/search?q=html" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" width="50" alt="CSS" class="mb-2">
+        <h5 class="fw-semibold">CSS</h5>
+        <p>CSS brings style to web content. It helps me build beautiful and responsive websites.</p>
+        <a href="https://www.google.com/search?q=css" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="50" alt="Python" class="mb-2">
+        <h5 class="fw-semibold">Python</h5>
+        <p>Python is versatile for data science, automation, and scripting. I enjoy using it for projects.</p>
+        <a href="https://www.google.com/search?q=python" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="50" alt="Java" class="mb-2">
+        <h5 class="fw-semibold">Java</h5>
+        <p>Java is powerful for OOP and backend. I've built applications using Java in academic projects.</p>
+        <a href="https://www.google.com/search?q=java" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" width="50" alt="C Language" class="mb-2">
+        <h5 class="fw-semibold">C Language</h5>
+        <p>C taught me fundamentals of programming like loops, memory, and logic building.</p>
+        <a href="https://www.google.com/search?q=c+language" target="_blank">More</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Non-Technical Skills -->
+  <h4 class="fw-bold mt-5 mb-4">Non-Technical Skills</h4>
+  <div class="row g-4">
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://img.icons8.com/ios-filled/50/000000/planner.png" width="40" alt="Time Management" class="mb-2">
+        <h5 class="fw-semibold">Time Management</h5>
+        <p>I organize tasks and meet deadlines by planning my day and prioritizing efficiently.</p>
+        <a href="https://www.google.com/search?q=time+management+skills" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://img.icons8.com/ios-filled/50/000000/communication.png" width="40" alt="Communication" class="mb-2">
+        <h5 class="fw-semibold">Communication</h5>
+        <p>I convey ideas effectively in both technical and non-technical settings with clarity.</p>
+        <a href="https://www.google.com/search?q=communication+skills" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://img.icons8.com/ios-filled/50/000000/teamwork.png" width="40" alt="Team Work" class="mb-2">
+        <h5 class="fw-semibold">Team Work</h5>
+        <p>I collaborate well in teams, contributing ideas and supporting others toward success.</p>
+        <a href="https://www.google.com/search?q=teamwork+skills" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://img.icons8.com/ios-filled/50/000000/leadership.png" width="40" alt="Leadership" class="mb-2">
+        <h5 class="fw-semibold">Leadership</h5>
+        <p>I have led college mini-projects and group assignments by guiding team efforts effectively.</p>
+        <a href="https://www.google.com/search?q=leadership+skills" target="_blank">More</a>
+      </div>
+    </div>
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="https://img.icons8.com/ios-filled/50/000000/project.png" width="40" alt="Project Management" class="mb-2">
+        <h5 class="fw-semibold">Project Management</h5>
+        <p>I manage timelines and tasks efficiently while ensuring goals and quality are met.</p>
+        <a href="https://www.google.com/search?q=project+management+skills" target="_blank">More</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .skill-box {
+    padding: 15px;
+    background: #f9f9f9;
+    border-radius: 10px;
+    height: 100%;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+
+  .skill-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .skill-box h5 {
+    margin-top: 10px;
+    font-weight: 600;
+  }
+
+  .skill-box p {
+    font-size: 0.95rem;
+  }
+
+  .skill-box a {
+    color: #007bff;
+    font-weight: 500;
+    text-decoration: none;
+  }
+
+  .skill-box a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 576px) {
+    .skill-box {
+      padding: 12px;
+    }
+
+    .skill-box img {
+      width: 40px !important;
+    }
+  }
+</style>
+
+
+
+<!-- ============================== -->
+<!-- Projects Section -->
+<!-- ============================== -->
+<section id="projects" class="container pt-4 pb-5">
+  <h2 class="text-center mb-4 fw-bold">Projects</h2>
+  <div class="row g-4">
+
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="Food.jpeg" alt="Food Calorie Tracker" class="img-fluid rounded mb-3">
+        <h5 class="fw-semibold">Food Calorie Tracker</h5>
+        <p>An app that helps users track calories from Indian dishes using images and ingredients.</p>
+        <a href="https://github.com/madhusricheekatla23/Food-Calorie-Tracker" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="BUS.jpeg" alt="Bus Overloaded Alert System" class="img-fluid rounded mb-3">
+        <h5 class="fw-semibold">Bus Overloaded Alert System</h5>
+        <p>This system detects bus overcrowding and alerts officials using sensors and IoT.</p>
+        <a href="https://github.com/madhusricheekatla23/Bus-Overloaded-Alert-System" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
+      </div>
+    </div>
+
+    <div class="col-md-4 col-sm-6">
+      <div class="text-center p-4 border border-primary rounded bg-white h-100">
+        <img src="E-Farm.jpg" alt="E-Farming Portal" class="img-fluid rounded mb-3">
+        <h5 class="fw-semibold">E-Farming Portal</h5>
+        <p>An online portal where farmers can buy, sell, and learn modern farming practices.</p>
+        <a href="https://github.com/madhusricheekatla23/E-Farming-Portal" target="_blank" class="btn btn-outline-primary mt-2">View Project</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<style>
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+
+  .project-box {
+    flex: 1 1 300px;
+    max-width: 350px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s;
+  }
+
+  .project-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .project-box img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  @media (max-width: 768px) {
+    .project-container {
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .project-box {
+      width: 90%;
+    }
+  }
+</style>
+
+
+<!-- ============================== -->
+<!-- Coding Profiles Section -->
+<!-- ============================== -->
+<section id="profiles" class="full-width-section pt-4 pb-5">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold">Coding Profiles</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="Leetcode.png" width="80" alt="LeetCode" class="mb-2">
+          <h5 class="fw-semibold">LeetCode</h5>
+          <a href="https://leetcode.com/u/23r01a05l6madhusri" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="Hackerrank.png" width="80" alt="HackerRank" class="mb-2">
+          <h5 class="fw-semibold">HackerRank</h5>
+          <a href="https://www.hackerrank.com/profile/23r01a05l6" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="CodeChef.png" width="80" alt="CodeChef" class="mb-2">
+          <h5 class="fw-semibold">CodeChef</h5>
+          <a href="https://www.codechef.com/users/ch_23r01a05l6" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="GFG.png" width="80" alt="GeeksforGeeks" class="mb-2">
+          <h5 class="fw-semibold">GeeksforGeeks</h5>
+          <a href="https://www.geeksforgeeks.org/user/madhusrick7pf" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="codeforces.png" width="80" alt="Codeforces" class="mb-2">
+          <h5 class="fw-semibold">Codeforces</h5>
+          <a href="https://codeforces.com/23r01a05l6madhusri" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="p-4 border border-primary rounded bg-white h-100">
+          <img src="Github.png" width="80" alt="GitHub" class="mb-2">
+          <h5 class="fw-semibold">GitHub</h5>
+          <a href="http://github.com/madhusricheekatla23" target="_blank" class="btn btn-outline-primary mt-2">View Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .profile-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  .profile-box {
+    flex: 1 1 calc(33.33% - 40px);
+    max-width: 300px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+    text-align: center;
+    transition: transform 0.3s;
+  }
+
+  .profile-box:hover {
+    transform: translateY(-5px);
+  }
+
+  .profile-box img {
+    margin-bottom: 10px;
+    border-radius: 8px;
+  }
+
+  .profile-box a {
+    color: #007bff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .profile-box a:hover {
+    text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .profile-box {
+      flex: 1 1 90%;
+    }
+  }
+</style>
+
+<!-- ============================== -->
+<!-- Certificates Section -->
+<!-- ============================== -->
+<!-- ============================== -->
+<!-- Certifications Section -->
+<!-- ============================== -->
+<section id="certifications" class="full-width-section pt-4 pb-5" style="background-color: #f4f9ff;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold">Certifications</h2>
+    <div class="row g-4 justify-content-center">
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">Python for Data Science</h5>
+          <p>By IBM</p>
+          <a href="IBM.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">PowerBI Workshop</h5>
+          <p>By Office Master</p>
+          <a href="Certificate.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">Data Analytics Job Simulation</h5>
+          <p>By Deloitte</p>
+          <a href="Deloitte.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">Basics of Python</h5>
+          <p>By Infosys</p>
+          <a href="Python.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">Python Essentials 1</h5>
+          <p>By Cisco Networking Academy</p>
+          <a href="Cisco.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="text-center p-4 border border-primary bg-white rounded h-100">
+          <h5 class="fw-semibold">Programming using Java</h5>
+          <p>By Infosys</p>
+          <a href="Java.pdf" class="btn btn-outline-primary mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- ============================== -->
+<!-- Contact Section -->
+<!-- ============================== -->
+<section id="contact" class="full-width-section pt-4 pb-5">
+  <div class="container text-center">
+    <h5 class="mb-2 text-muted">Get in Touch</h5>
+    <p class="mt-2">I’m open to collaborations, discussions and new opportunities — feel free to connect!</p>
+    <h2 class="mb-4 fw-bold">Contact Me</h2>
+
+    <div class="mx-auto border border-primary rounded bg-white p-4" style="max-width: 600px;">
+      <div class="contact-item d-flex align-items-center justify-content-start mb-4">
+        <img src="https://img.icons8.com/ios-filled/50/0072ff/email-open.png" width="40" alt="Email Icon" class="me-3">
+        <div class="text-start">
+          <p class="mb-1 fw-semibold">Email</p>
+          <a href="mailto:madhusricheekatla@gmail.com" target="_blank" style="color:#0072ff; text-decoration: underline;">
+            madhusricheekatla@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="contact-item d-flex align-items-center justify-content-start">
+        <img src="https://img.icons8.com/ios-filled/50/0072ff/linkedin.png" width="40" alt="LinkedIn Icon" class="me-3">
+        <div class="text-start">
+          <p class="mb-1 fw-semibold">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/madhusri-cheekatla-23b50a292" target="_blank" style="color:#0072ff; text-decoration: underline;">
+            linkedin
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<footer style="background-color: #f9f9f9; padding: 20px 0; border-top: 1px solid #ddd;">
+  <div style="text-align: center; font-size: 14px; color: #555;">
+    © <span id="year"></span> <strong>Madhusri Cheekatla</strong> | Crafted with ❤️ | All Rights Reserved
+  </div>
+</footer>
+
+<script>
+  // Automatically update the year
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</html>
