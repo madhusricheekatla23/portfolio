@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Madhusri Cheekatla | Portfolio</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Georgia', sans-serif;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      background: #230034; /* Full page dark purple background */
+      color: white;
+    }
+    nav {
+      background: linear-gradient(to right, #4f079dd9, #66058c);
+    }
+    nav a {
+      color: white !important;
+      font-weight: 500;
+      margin: 0 10px;
+    }
+nav.navbar {
+  background: rgba(53, 3, 81, 0.9);
+  backdrop-filter: blur(6px); 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav.navbar:hover {
+  background: rgba(61, 2, 68, 0.95); 
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2); 
+}
+
+nav a {
+  color: white !important;
+  font-weight: 500;
+  margin: 0 12px;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 4px;
+}
+
+nav a:hover {
+  color: #fff7ff !important; 
+  border-bottom: 2px solid white;
+}
+
+    /* ================== Home Section ================== */
+header {
+  background: #230034;
+  color: rgb(255, 255, 255);
+  padding: 2rem 1rem;
+  width: 100%;
+  text-align: center;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  border-radius: 15px;
+  max-width: 600px; /* Smaller centered box */
+  margin: 50px auto;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+header:hover {
+  transform: translateY(-6px);
+  border-color: #ffffff;
+  box-shadow: 0 0 10px #f6f4f6; /* Purple-white glow */
+}
+
+header img {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #ffffff;
+  object-fit: cover;
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.2);
+  margin-top: 10px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+header img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #e3baff;
+}
+
+.resume-btn {
+  margin-top: 20px;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  background: white;
+  color: #6a11cb;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.resume-btn:hover {
+  background: #f3e8ff;
+  color: #430075;
+  border: 1px solid white;
+  text-decoration: none;
+}
+
+
+    /* ================== About Section ================== */
+.about-box {
+  width: 100%;
+  max-width: 900px;
+  background: none; 
+  border: 2px solid rgba(255, 255, 255, 0.3); 
+  border-radius: 12px;
+  color: white;
+  padding: 2rem;
+  text-align: center;
+  transition: all 0.4s ease;
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.about-box:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+  border-color: #ffffff; 
+  background: none; 
+}
+
+.about-box p {
+  color: #e8d9ff;
+}
+
+@media (max-width: 768px) {
+  header {
+    margin: 10px;
+    padding: 2rem 1rem;
+  }
+  .about-box {
+    max-width: 95%;
+    margin: 0 10px;
+  }
+}
+  </style>
+</head>
+
+<body>
+
+<!-- ============================== -->
+<!-- Navbar Section -->
+<!-- ============================== -->
+<!-- ============================== -->
+<!-- Navbar Section -->
+<!-- ============================== -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#home">Portfolio</a>
+
+    <!-- ✅ Hamburger icon for mobile -->
+    <button 
+      class="navbar-toggler" 
+      type="button" 
+      data-bs-toggle="collapse" 
+      data-bs-target="#navbarNav" 
+      aria-controls="navbarNav" 
+      aria-expanded="false" 
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- ✅ Collapsible menu -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#profiles">Coding Profiles</a></li>
+        <li class="nav-item"><a class="nav-link" href="#certifications">Certifications</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<!-- ============================== -->
+<!-- Home Section -->
+<!-- ============================== -->
+<header id="home">
+  <div class="container">
+    <img src="Madhuuuu.jpg" alt="Madhusri" class="mx-auto d-block">
+
+    <div class="mt-3">
+      <h3 style="font-size: 1.2rem; font-weight: bold;">I am Madhusri Cheekatla</h3>
+      <p style="color:#d4b3ff; font-weight: 700; font-size: 1rem;">
+        Tech Enthusiast <strong style="font-weight: 900; font-size: 1.1rem;">|</strong> Aspiring Software Engineer
+      </p>
+      <p style="color: #f3e8ff;"><strong>Location:</strong> Rajanna Sircilla, Telangana</p>
+      <a href="23R01A05L6-Madhusri.pdf" download class="resume-btn">Download Resume</a>
+    </div>
+  </div>
+</header>
+
+<!-- ============================== -->
+<!-- About Section -->
+<!-- ============================== -->
+<section id="about" class="container py-5 d-flex justify-content-center">
+  <div class="about-box">
+    <h2 class="fw-bold mb-3">About Me</h2>
+    <p>
+      <strong>I'm a passionate Computer Science student</strong> from CMR Institute of Technology, Hyderabad. I have a deep enthusiasm for <strong>problem-solving</strong> and learning new technologies.
+      <br><br>
+      With experience in <strong>Java</strong> and <strong>Python</strong>, I enjoy turning innovative ideas into practical solutions. I actively participate in <strong>coding competitions</strong> and <strong>tech events</strong> to sharpen my skills.
+      <br><br>
+      My journey includes building <strong>real-time projects</strong>, collaborating in <strong>teams</strong>, and continuously improving through <strong>self-learning</strong>. I strive to contribute meaningfully to the tech industry and become a well-rounded software engineer.
+    </p>
+  </div>
+</section>
+
+<!-- ============================== -->
+<!-- Skills Section -->
+<!-- ============================== -->
+<section id="skills" class="full-width-section pt-5 pb-5" style="color:white; text-align:center;">
+  <div class="container">
+    <h2 class="fw-bold mb-4">Skills</h2>
+
+    <!-- Technical Skills -->
+    <h4 class="mb-3" style="color:#e3baff;">Technical Skills</h4>
+    <div class="skills-container">
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/html-5.png" alt="HTML">
+        <p>HTML</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/css3.png" alt="CSS">
+        <p>CSS</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/java-coffee-cup-logo.png" alt="Java">
+        <p>Java</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/python.png" alt="Python">
+        <p>Python</p>
+      </div>
+    </div>
+
+    <!-- Non-Technical Skills -->
+    <h4 class="mt-5 mb-3" style="color:#e3baff;">Non-Technical Skills</h4>
+    <div class="skills-container">
+      <div class="skill-box">
+        <img src="https://img.icons8.com/fluency/96/teamwork.png" alt="Teamwork">
+        <p>Teamwork</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/fluency/96/idea-sharing.png" alt="Problem Solving">
+        <p>Problem Solving</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/communication.png" alt="Communication">
+        <p>Communication</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/fluency/96/time-management.png" alt="Time Management">
+        <p>Time Management</p>
+      </div>
+      <div class="skill-box">
+        <img src="https://img.icons8.com/color/96/leadership.png" alt="Leadership">
+        <p>Leadership</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<style>
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+  }
+
+  .skill-box {
+    width: 140px;
+    height: 140px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 15px;
+    background: none; 
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(255,255,255,0.1);
+  }
+
+  .skill-box:hover {
+    transform: translateY(-8px);
+    border-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(255,255,255,0.3);
+  }
+
+  .skill-box img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 10px;
+  }
+
+  .skill-box p {
+    color: #f5e8ff;
+    font-weight: 500;
+    margin: 0;
+  }
+
+  @media (max-width: 768px) {
+    .skill-box {
+      width: 120px;
+      height: 120px;
+    }
+  }
+</style>
+<!-- ============================== -->
+<!-- Projects Section -->
+<!-- ============================== -->
+<section id="projects" class="container-fluid pt-4 pb-5" style="background-color:#230034; color:#fff;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold" style="color:#fff;">Projects</h2>
+    <div class="project-container">
+      <div class="project-box">
+        <img src="Food.jpeg" alt="Food Calorie Tracker">
+        <h5 class="fw-bold mt-2">Food Calorie Tracker</h5>
+        <p>An interactive web app that tracks Indian food calories, recommends healthy meals, and helps manage fitness goals.</p>
+        <a href="https://github.com/madhusricheekatla23/Food-Calorie-Tracker" target="_blank" class="github-btn">
+          View on GitHub
+        </a>
+      </div>
+      <div class="project-box">
+        <img src="BUS.jpeg" alt="Bus Overloaded Alert System">
+        <h5 class="fw-bold mt-2">Bus Overloaded Alert System</h5>
+        <p>IoT-based project that detects overcrowding in buses using sensors and sends real-time alerts to authorities.</p>
+        <a href="https://github.com/madhusricheekatla23/Bus-Overloaded-Alert-System" target="_blank" class="github-btn">
+          View on GitHub
+        </a>
+      </div>
+      <div class="project-box">
+        <img src="Todo.jpg" alt="To-do List">
+        <h5 class="fw-bold mt-2">To-Do List</h5>
+        <p>To-do list web app that allows users to add, edit, and delete tasks with cloud deployment.</p>
+        <a href="https://github.com/madhusricheekatla23/Todo" target="_blank" class="github-btn">
+          View on GitHub
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.project-box {
+  flex: 1 1 300px;
+  max-width: 340px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: center;
+  color: white;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease,
+              background-color 0.3s ease,
+              box-shadow 0.3s ease,
+              border-color 0.3s ease;
+}
+
+.project-box:hover {
+  transform: translateY(-8px);
+  background-color: none;
+  border-color: #fff;
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
+
+.project-box img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.github-btn {
+  display: inline-block;
+  margin-top: 12px;
+  padding: 8px 16px;
+  background-color: #ffffff;
+  color: #2a003f;
+  font-weight: bold;
+  font-size: 0.9rem;
+  text-decoration: none;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(255, 255, 255, 0.2);
+}
+
+.github-btn:hover {
+  background-color: #ffccff;
+  color: #2a003f;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.4);
+}
+
+@media (max-width: 768px) {
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .project-box {
+    width: 90%;
+  }
+}
+</style>
+
+
+<!-- ============================== -->
+<!-- Coding Profiles Section -->
+<!-- ============================== -->
+<section id="profiles" class="full-width-section pt-4 pb-5" style="background-color:#230034; color:#fff;">
+  <div class="container">
+    <h2 class="text-center mb-4 fw-bold" style="color:#fff;">Coding Profiles</h2>
+    <div class="row g-4 justify-content-center">
+
+      <!-- LeetCode -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="Leetcode.png" width="80" alt="LeetCode" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">LeetCode</h5>
+          <a href="https://leetcode.com/u/23r01a05l6madhusri" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <!-- HackerRank -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="Hackerrank.png" width="80" alt="HackerRank" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">HackerRank</h5>
+          <a href="https://www.hackerrank.com/profile/23r01a05l6" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <!-- CodeChef -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="CodeChef.png" width="80" alt="CodeChef" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">CodeChef</h5>
+          <a href="https://www.codechef.com/users/ch_23r01a05l6" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <!-- Codeforces -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="codeforces.png" width="80" alt="Codeforces" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">Codeforces</h5>
+          <a href="https://codeforces.com/23r01a05l6madhusri" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <!-- GeeksforGeeks -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="GFG.png" width="80" alt="GeeksforGeeks" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">GeeksforGeeks</h5>
+          <a href="https://www.geeksforgeeks.org/user/madhusrick7pf" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+      <!-- GitHub -->
+      <div class="col-md-4 col-sm-6 text-center">
+        <div class="coding-box p-4 h-100">
+          <img src="Github.png" width="80" alt="GitHub" class="mb-2 coding-logo">
+          <h5 class="fw-semibold">GitHub</h5>
+          <a href="http://github.com/madhusricheekatla23" target="_blank" class="btn btn-outline-light mt-2">View Profile</a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<style>
+  .coding-box {
+    background: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    transition: all 0.4s ease;
+    box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .coding-box:hover {
+    transform: translateY(-6px);
+    background-color: none;
+    border-color: #ffffff;
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.25);
+  }
+
+  .coding-logo {
+    transition: transform 0.3s ease;
+  }
+
+  .coding-box:hover .coding-logo {
+    transform: scale(1.1);
+  }
+  .btn-outline-light {
+    border: 1.5px solid white;
+    color: white;
+    font-weight: 500;
+    border-radius: 25px;
+    padding: 6px 16px;
+    transition: 0.3s ease;
+  }
+
+  .btn-outline-light:hover {
+    background-color: white;
+    color: #2a003f;
+    font-weight: 600;
+  }
+</style>
+
+<!-- ============================== -->
+<!-- Certifications Section -->
+<!-- ============================== -->
+<section id="certifications" class="full-width-section pt-4 pb-5" style="background-color: #230034;">
+  <div class="container">
+    <h2 class="text-center mb-5 fw-bold text-white">Certifications</h2>
+    <div class="row g-4 justify-content-center">
+
+      <div class="col-md-4 col-sm-6">
+        <div class="cert-box text-center p-4 rounded h-100">
+          <h5 class="fw-semibold text-white">Java Foundation</h5>
+          <p class="text-light">By Infosys</p>
+          <a href="Infosys.pdf" class="btn btn-outline-light mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+      <div class="col-md-4 col-sm-6">
+        <div class="cert-box text-center p-4 rounded h-100">
+          <h5 class="fw-semibold text-white">Data Analytics Job Simulation</h5>
+          <p class="text-light">By Deloitte</p>
+          <a href="Deloitte.pdf" class="btn btn-outline-light mt-3" target="_blank">View Certificate</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<style>
+  .cert-box {
+    background-color: rgba(255, 255, 255, 0.08);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    transition: all 0.3s ease;
+    text-align: center;
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+  }
+
+  .cert-box:hover {
+    transform: translateY(-8px);
+    background-color: none;
+    border-color: #ffffff; 
+    box-shadow: 0 0 25px rgba(157, 78, 221, 0.7);
+  }
+  .btn-outline-light {
+    border-color: #fff;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+
+  .btn-outline-light:hover {
+    background-color: #9944de;
+    border-color: #9d4edd;
+    color: #fff;
+    font-weight: 600;
+  }
+</style>
+
+
+<!-- ============================== -->
+<!-- Contact Section -->
+<!-- ============================== -->
+<section id="contact" class="full-width-section pt-4 pb-5" style="background-color: #230034; color: #fff;">
+  <div class="container text-center">
+    <h5 class="mb-2" style="color:#d1c4e9;">Get in Touch</h5>
+    <p class="mt-2">I’m open to collaborations, discussions and new opportunities — feel free to connect!</p>
+    <h2 class="mb-4 fw-bold" style="color:#fff;">Contact Me</h2>
+
+    <!-- Floating Contact Box -->
+    <div class="contact-box mx-auto p-4">
+      <div class="contact-item d-flex align-items-center justify-content-start mb-4">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/email-open.png" width="40" alt="Email Icon" class="me-3">
+        <div class="text-start">
+          <p class="mb-1 fw-semibold">Email</p>
+          <a href="mailto:madhusricheekatla@gmail.com" target="_blank" class="contact-link">
+            madhusricheekatla@gmail.com
+          </a>
+        </div>
+      </div>
+      <div class="contact-item d-flex align-items-center justify-content-start">
+        <img src="https://img.icons8.com/ios-filled/50/ffffff/linkedin.png" width="40" alt="LinkedIn Icon" class="me-3">
+        <div class="text-start">
+          <p class="mb-1 fw-semibold">LinkedIn</p>
+          <a href="https://www.linkedin.com/in/madhusri-cheekatla-23b50a292" target="_blank" class="contact-link">
+            linkedin
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer style="background-color: #36005f; padding: 20px 0; border-top: 1px solid #300146;">
+  <div style="text-align: center; font-size: 14px; color: #ddd;">
+    © <span id="year"></span> <strong style="color:#fff;">Madhusri Cheekatla</strong> | Crafted with ❤️ | All Rights Reserved.
+  </div>
+</footer>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+<style>
+  .contact-box {
+    background: rgba(255,255,255,0.08);
+    border: 2px solid rgba(255,255,255,0.3);
+    border-radius: 12px;
+    max-width: 600px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+    transition: all 0.4s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  .contact-box::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -75%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(120deg, rgba(255,255,255,0.1), rgba(255,255,255,0.4), rgba(255,255,255,0.1));
+    transform: skewX(-20deg);
+    transition: 0.8s;
+  }
+  .contact-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 10px #e3baff;
+    border-color: #fff;
+  }
+
+  .contact-link {
+    color: #fff;
+    text-decoration: underline;
+    font-weight: 500;
+  }
+
+  .contact-link:hover {
+    color: #ffccff;
+  }
+
+  @media (max-width: 768px) {
+    .contact-box {
+      max-width: 90%;
+      padding: 20px;
+    }
+  }
+</style>
+<!-- Bootstrap JS (required for mobile navbar toggle to work) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
